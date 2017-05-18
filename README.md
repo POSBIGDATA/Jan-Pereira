@@ -10,7 +10,7 @@ O artigo escolhido por mim para ser traduzido foi escrito pela equipe de infraes
 
 Hive – A Petabyte Scale Data Warehouse Using Hadoop
 
-Obs: O artigo original e a respectiva traduço pode ser encontrada na pasta artigo.
+Obs: O artigo original e a respectiva tradução pode ser encontrada na pasta artigo.
 
 
 ### Projeto / Problema
@@ -77,4 +77,4 @@ pig -f SearchWordCountFile.pig -param keyword=<informe_a_palavra> -param input=<
 
 hdfs dfs -get <path_hdfs_output> <path_local_output>
 
-Obs: Os códigos-fontes e os livros utilizados na solução deste problema em forma de exercícios podem ser encontrados na pasta projeto.
+Obs: Os códigos-fontes e os livros utilizados na solução deste problema em forma de exercícios utilizando python e pig podem ser encontrados na pasta projeto.
