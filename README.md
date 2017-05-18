@@ -1,10 +1,19 @@
 # Universidade Positivo - Disciplina sobre Map Reduce
 
-### Autor
+### Aluno
 
   - [Jan Antonio Pereira]
 
-### Problema
+### Artigo
+
+O artigo escolhido por mim para ser traduzido foi escrito pela equipe de infraestrutura de dados do Facebook:
+
+Hive – A Petabyte Scale Data Warehouse Using Hadoop
+
+Obs: O artigo original e a respectiva traduço pode ser encontrada na pasta artigo.
+
+
+### Projeto / Problema
 
 Dado um conjunto de livros dividos em diversos capítulos em formato HTML, conforme disponibilizado na pasta lit2go.
 
@@ -68,3 +77,4 @@ pig -f SearchWordCountFile.pig -param keyword=<informe_a_palavra> -param input=<
 
 hdfs dfs -get <path_hdfs_output> <path_local_output>
 
+Obs: Os códigos-fontes e os livros utilizados na solução deste problema em forma de exercícios podem ser encontrados na pasta projeto.
