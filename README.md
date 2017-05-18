@@ -33,11 +33,14 @@ Dado um conjunto de livros dividos em diversos capítulos em formato HTML, confo
 Para a executação dos scripts abaixo, utilize o terminal disponível na VM cloudera.
 
 1) Para extrair e gerar os textos em formato txt de cada capítulo para cada livro, execute o script abaixo:
+
 python extract_text.py <input_path_book_html> <output_path_book_txt>
 ex:  python extract_text.py /home/janpereira/books /home/janpereira/books/fullbooks
+
 Obs: Certifique-se que o diretório de destino exista de executar o extract_text.py. 
 
-2) Para extrair e gerar os textos em formato txt removendo as preposições e outras classes de palavras, execute o script abaixo: 
+2) Para extrair e gerar os textos em formato txt removendo as preposições e outras classes de palavras, execute o script abaixo:
+
 python remove_class_words.py <input_path_book_txt> <output_path_book_txt>
 ex: python remove_class_words.py /home/janpereira/books/fullbook /home/janpereira/books/wordsbooks
 
@@ -48,14 +51,18 @@ Após instalar a biblioteca NLTK, para auxiliá-lo no download dos datasets bast
 Agora sim, basta se certificar que o diretório de destino exista e executar o remove_class_words.py.
 
 3) Para mover a pasta books para o HDFS, execute o script abaixo:
+
 hdfs dfs -put <path_local_book> <path_hdfs_book>
 
 3) Para procurar e listar os livros que contenham uma dada palavra, execute o script abaixo:
+
 pig -f SearchWordFile.pig -param keyword=<informe a palavra> -param input=<input_path_hdfs_books> -param output=<output_path_hdfs_books>
 
 4) Para procurar, listar e contar os livros que contenham uma dada palavra, execute o script abaixo:
+
 pig -f SearchWordCountFile.pig -param keyword=<informe a palavra> -param input=<input_path_hdfs_books> -param output=<output_path_hdfs_books>
 
 5) Para mover a pasta configurada de saída do processamentodas pesquisas, execute o script abaixo:
+
 hdfs dfs -get <path_hdfs_output> <path_local_output>
 
