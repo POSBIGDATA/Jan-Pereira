@@ -14,11 +14,11 @@ Dado um conjunto de livros dividos em diversos capítulos em formato HTML, confo
 
 3) Mover a pasta wordsbooks e fullbooks com os arquivos txts gerados para o HDFS. 
 
-3) Fornecer uma palavra e mostrar em que arquivos encontramos a palavra.
+4) Fornecer uma palavra e mostrar em que arquivos encontramos a palavra.
 
-4) Fornecer uma palavra e mostrar em que arquivos encontramos a palavra e a quantidade de ocorrências.
+5) Fornecer uma palavra e mostrar em que arquivos encontramos a palavra e a quantidade de ocorrências.
 
-5) Mover o resultado do processamento Hadoop MapReduce para o Sistema de Arquivo Local. 
+6) Mover o resultado do processamento Hadoop MapReduce para o Sistema de Arquivo Local. 
 
 ### Requisitos
 
@@ -56,15 +56,15 @@ Agora sim, basta se certificar que o diretório de destino exista e executar o r
 
 hdfs dfs -put <path_local_book> <path_hdfs_book>
 
-3) Para procurar e listar os livros que contenham uma dada palavra, execute o script abaixo:
+4) Para procurar e listar os livros que contenham uma dada palavra, execute o script abaixo:
 
 pig -f SearchWordFile.pig -param keyword=<informe_a_palavra> -param input=<input_path_hdfs_books> -param output=<output_path_hdfs_books>
 
-4) Para procurar, listar e contar os livros que contenham uma dada palavra, execute o script abaixo:
+5) Para procurar, listar e contar os livros que contenham uma dada palavra, execute o script abaixo:
 
 pig -f SearchWordCountFile.pig -param keyword=<informe_a_palavra> -param input=<input_path_hdfs_books> -param output=<output_path_hdfs_books>
 
-5) Para mover a pasta configurada de saída do processamentodas pesquisas, execute o script abaixo:
+6) Para mover a pasta configurada de saída do processamentodas pesquisas, execute o script abaixo:
 
 hdfs dfs -get <path_hdfs_output> <path_local_output>
 
