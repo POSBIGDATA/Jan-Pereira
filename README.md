@@ -58,11 +58,11 @@ hdfs dfs -put <path_local_book> <path_hdfs_book>
 
 3) Para procurar e listar os livros que contenham uma dada palavra, execute o script abaixo:
 
-pig -f SearchWordFile.pig -param keyword=<informe a palavra> -param input=<input_path_hdfs_books> -param output=<output_path_hdfs_books>
+pig -f SearchWordFile.pig -param keyword=<informe_a_palavra> -param input=<input_path_hdfs_books> -param output=<output_path_hdfs_books>
 
 4) Para procurar, listar e contar os livros que contenham uma dada palavra, execute o script abaixo:
 
-pig -f SearchWordCountFile.pig -param keyword=<informe a palavra> -param input=<input_path_hdfs_books> -param output=<output_path_hdfs_books>
+pig -f SearchWordCountFile.pig -param keyword=<informe_a_palavra> -param input=<input_path_hdfs_books> -param output=<output_path_hdfs_books>
 
 5) Para mover a pasta configurada de saída do processamentodas pesquisas, execute o script abaixo:
 
