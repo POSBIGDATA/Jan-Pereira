@@ -86,7 +86,7 @@ pig -f SearchWordFile.pig -param keyword=<informe_a_palavra> -param input=<input
 pig -f SearchWordCountFile.pig -param keyword=<informe_a_palavra> -param input=<input_path_hdfs_books> -param output=<output_path_hdfs_books>
 
 
-6) Para mover a pasta configurada de saída do processamentodas pesquisas, execute o script abaixo:
+6) Para mover a pasta configurada de saída do processamento das pesquisas para o ambiente local, execute o script abaixo:
 
 hdfs dfs -get <path_hdfs_output> <path_local_output>
 
