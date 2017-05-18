@@ -33,8 +33,8 @@ Dado um conjunto de livros dividos em diversos capítulos em formato HTML extra�
 
 ### Requisitos
 
-  - Como ambiente de desenvolvimento foi baixado o VirtualBox e uma imagem da VM do cloudera.
-  - A VM cloudera já nos entrega instalado o básico que precisamos como Python 2.7, Hadoop, Pig e muitos outros softwares.
+  - Como ambiente de desenvolvimento foi baixado o VirtualBox e uma imagem da VM do cloudera-quickstart-vm-5.7.0.0.
+  - A VM cloudera já nos entrega instalado um ambiente completo, mas escolhemos utilizar na solução deste problema Python 2.7, Hadoop e Pig.
   - Para extrair os textos dos arquivos HTMLs foi instalada a biblioteca python BeautifulSoup (bs4).
   - Para extrair as preposições dos textos foi instalada a biblioteca python NLTK.
   - Para procurar e contar palavras dentro dos arquivos textos foi utilizada a linguagem Pig.
