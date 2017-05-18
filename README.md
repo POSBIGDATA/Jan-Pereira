@@ -15,13 +15,13 @@ Obs: O artigo original e a respectiva tradução pode ser encontrada na pasta ar
 
 ### Projeto / Problema
 
-Dado um conjunto de livros dividos em diversos capítulos em formato HTML, conforme disponibilizado na pasta lit2go.
+Dado um conjunto de livros dividos em diversos capítulos em formato HTML extraídos do site https://etc.usf.edu/lit2go/books.
 
-1) Extrair apenas os textos de cada capítulo e produzir um arquivo único em formato .txt contendo todo o livro com todas as palavras em caixa-baixa, salvando estes livros na pasta fullbooks. O resultado do processamento com os arquivos da pasta fullbooks foram disponibilizados em formato zip.
+1) Extrair apenas os textos de cada capítulo e produzir um arquivo único em formato .txt contendo todo o livro com todas as palavras em caixa-baixa.
 
-2) Remover as preposições e outras classes de palavras menos significantes dos livros da pasta fullbooks e salvar em wordsbooks. O resultado do processamento com os arquivos da pasta wordsbooks foram disponibilizados em formato zip.
+2) Remover as preposições e outras classes de palavras menos significantes dos livros.
 
-3) Mover a pasta wordsbooks e fullbooks com os arquivos txts gerados para o HDFS. 
+3) Mover a pasta dos livros com os arquivos txts gerados para o HDFS. 
 
 4) Fornecer uma palavra e mostrar em que arquivos encontramos a palavra.
 
@@ -55,7 +55,7 @@ python remove_class_words.py <input_path_book_txt> <output_path_book_txt>
 
 ex: python remove_class_words.py /home/janpereira/books/fullbook /home/janpereira/books/wordsbooks
 
-Obs: 
+Obs:
 Lembre-se de instalar a biblioteca python NLTK.
 Para analisar as classes de palavras será importante fazer o download dos datasets da linguagem inglesa.
 Após instalar a biblioteca NLTK, para auxiliá-lo no download dos datasets basta executar python download_nltk.py.
