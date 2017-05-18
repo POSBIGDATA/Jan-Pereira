@@ -35,6 +35,7 @@ Para a executação dos scripts abaixo, utilize o terminal disponível na VM clo
 1) Para extrair e gerar os textos em formato txt de cada capítulo para cada livro, execute o script abaixo:
 
 python extract_text.py <input_path_book_html> <output_path_book_txt>
+
 ex:  python extract_text.py /home/janpereira/books /home/janpereira/books/fullbooks
 
 Obs: Certifique-se que o diretório de destino exista de executar o extract_text.py. 
@@ -42,6 +43,7 @@ Obs: Certifique-se que o diretório de destino exista de executar o extract_text
 2) Para extrair e gerar os textos em formato txt removendo as preposições e outras classes de palavras, execute o script abaixo:
 
 python remove_class_words.py <input_path_book_txt> <output_path_book_txt>
+
 ex: python remove_class_words.py /home/janpereira/books/fullbook /home/janpereira/books/wordsbooks
 
 Obs: 
