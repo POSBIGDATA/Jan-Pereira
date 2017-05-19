@@ -42,7 +42,7 @@ Dado um conjunto de livros dividos em diversos capítulos em formato HTML extra�
   
 ### Solução
 
-Para a executação dos scripts abaixo, utilize o terminal disponível na VM cloudera.
+Para a execução dos scripts abaixo, utilize o terminal disponível na VM cloudera.
 
 
 1) Para extrair e gerar os textos em formato txt de cada capítulo para cada livro, execute o script abaixo:
@@ -51,7 +51,7 @@ python extract_text.py <input_path_book_html> <output_path_book_txt>
 
 ex:  python extract_text.py /home/janpereira/books /home/janpereira/books/fullbooks
 
-Obs: Certifique-se que o diretório de destino exista de executar o extract_text.py. 
+Obs: Certifique-se que o diretório de destino exista antes executar o extract_text.py. 
 
 
 2) Para extrair e gerar os textos em formato txt removendo as preposições e outras classes de palavras, execute o script abaixo:
